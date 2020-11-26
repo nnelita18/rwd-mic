@@ -1,0 +1,133 @@
+$card-client: '.card-client';
+$bg-cardclient: #183379;
+
+#{$card-client}{
+	// background-color: $bg-cardclient;
+	// padding: 1.6rem 1.8rem;
+	color: #f1f1f1;
+	border-radius: 1.2rem;
+	background: {
+		// image: url('../img/clientes/reward-card.jpg');
+		size: cover;
+		repeat: no-repeat;
+		position: center;
+	}
+	width: 426px;
+	height: 232px;
+	max-width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+	&__title {
+		padding-left: 10rem;
+		color: #75602b;
+		@include media-breakpoint-down(sm) {
+			padding-left: 1rem;
+			text-align: right;
+		}
+	}
+	&__points {
+	    // border-top: 2px solid #5b6e9e;
+	    // border-bottom: 2px solid #5b6e9e;
+	    color: #f1f1f1;
+	    // border-top: 2px solid #bfa76c;
+	    // border-bottom: 2px solid #bfa76c;
+	    font-weight: 600;
+	    padding: 1rem 0;
+	    margin-top: 1.2rem;
+	    text-align: right;
+	    font-weight: 600;
+	    @include media-breakpoint-down(sm) {
+			text-align: center;
+			margin-top: 0;
+			padding: .5rem 0;
+		}
+	}
+	.card-title {
+		color: #f1f1f1;
+		margin-top: 2rem;
+		margin-bottom: 0.75rem;
+		display: block;
+		text-align: right;
+		// padding-left: 10rem;
+		padding-top: 3.5rem;
+		font-size: 1.3rem;
+		font-weight: 600;
+		@include media-breakpoint-down(sm) {
+			text-align: center;
+			padding-top: 2.7rem;
+		}
+	}
+	&__barcode {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-image: none;
+	}
+	@include media-breakpoint-only(lg) {
+		width: 100%;
+    	height: auto;
+	}
+	@include media-breakpoint-down(sm) {
+		width: 100%;
+    	height: auto;
+	}
+}
+
+.card-front {
+	.imgcard {
+		// max-width: 512px;
+		border-radius: 1.2rem;
+		@include media-breakpoint-down(sm) {
+			margin: 0 auto;
+			display: block;
+		}
+	}
+	.card-info {
+	    top: 2rem;
+	    left: 0;
+	    right: 0;
+	    margin: 0 auto;
+	    text-align: center;
+	    padding-right: 2rem;
+	    @include media-breakpoint-down(lg) {
+	    	top: 1rem;
+	    }
+	    @include media-breakpoint-down(sm) {
+	    	top: 15%;
+	    	padding-right: 0;
+	    }
+	}
+}
+
+.card-back {
+	display: none;
+	// padding-top: 4rem;
+	.imgcard {
+		// max-width: 512px;
+		border-radius: 1.2rem;
+	}
+}
+
+#cardbox.front {
+	.card-front {
+
+		-webkit-animation: sideout 0.55s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+	        animation: sideout 0.55s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+	        display: none;
+	}
+	.card-back {
+		display: block;
+
+		-webkit-animation: sideback 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	        animation: sideback 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	}
+	.card-client {
+		// background: {
+		// 	image: url('../img/clientes/reward-cardback2.jpg');
+		// 	size: cover;
+		// 	repeat: no-repeat;
+		// 	position: center;
+		// }
+	}
+}
+

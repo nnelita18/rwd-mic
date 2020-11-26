@@ -1,0 +1,62 @@
+$refers: '.refers';
+
+#{$refers}{
+	&__descrip {
+		.description {
+			padding-top: 2rem;
+			overflow: hidden;
+		}
+		.advs {
+	        list-style: none;
+	        li {
+		        background: {
+		            size: 15px auto;
+		            image: url('../img/beneficios/refer-icon.svg');
+		            position: left center;
+		            repeat: no-repeat;
+		        }
+		        padding: .5rem 2rem;
+	        }
+		}
+	}
+	&__info {
+		.small {
+			font-size: .9rem;
+		}
+		.gifticon {
+			height: 4rem;
+		}
+		.list-refereds {
+			height: 320px;
+			overflow-y: scroll;
+			.list-group-item {
+				background-color: #deedf9;
+				margin-bottom: .2rem;
+			}
+		}
+	}
+}
+
+.modalref {
+
+	.code-number {
+		flex-grow: 1;
+	}
+	.modal-header {
+		background: $primary;
+		color: #ffffff;
+	}
+	.modal-content {
+		background: {
+			color: #fdec9a;
+			image: url(../img/home/sharecol.svg);
+		    position: left 2rem center;
+		    size: auto 90%;
+		    repeat: no-repeat;
+		}
+	}
+	.close {
+		color: #ffffff;
+		opacity: 1;
+	}
+}

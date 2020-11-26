@@ -1,0 +1,121 @@
+$nav-menu: '.rwd-menu';
+
+#{$nav-menu}{
+	// background-color: $yellow !important;
+	background: rgb(204,110,40);
+	background: linear-gradient(90deg, rgba(204,110,40,1) 0%, rgba(224,162,38,1) 21%, rgba(250,223,0,1) 50%, rgba(224,162,38,1) 83%, rgba(204,110,40,1) 100%);background: linear-gradient(90deg, rgba(204,110,40,1) 0%, rgba(224,162,38,1) 21%, rgba(250,223,0,1) 50%, rgba(224,162,38,1) 83%, rgba(204,110,40,1) 100%);
+	background-size: 130px 100%;
+	background-repeat: repeat-x;
+	background-position: left center;
+	padding-top: 0;
+	padding-bottom: 0;
+	.container {
+		@include media-breakpoint-down(sm) {
+			max-width: 100%;
+		}
+	}
+	.navbar-brand {
+		padding-top: 0;
+		padding-bottom: 0;
+		.icon {
+			height: 46px;
+			width: auto;
+			@include media-breakpoint-down(md) {
+				height: 36px;
+			}
+		}
+	}
+	.navbar-nav {
+		.nav-item {
+			width: 130px;
+			.bg-success {
+				font-size: .9rem;
+				padding: .8rem 1.8rem;
+			}
+			.nav-link {
+				font-size: .9rem;
+				padding: .8rem 1.8rem;
+				background: rgb(204,110,40);
+				background: linear-gradient(90deg, rgba(204,110,40,1) 0%, rgba(224,162,38,1) 21%, rgba(250,223,0,1) 50%, rgba(224,162,38,1) 83%, rgba(204,110,40,1) 100%);
+				color: $primary !important;
+				text-align: center;
+				&.referopc {
+					// background: {
+					// 	// color: #f89085;
+			  //           size: 16px auto;
+			  //           image: url('../img/beneficios/refer-icon.svg');
+			  //           position: left 7px center;
+			  //           repeat: no-repeat;
+			  //       }
+			        // border: 1px double #f89085;
+			        color: $primary;
+			  //       @include media-breakpoint-down(md) {
+			  //       	background: {
+					// 		size: 10px auto;
+					// 		position: left 0 center;
+			  //       	}
+					// }
+				}
+				&:hover {
+					color: #f1f1f1;
+					padding: .8rem 1.8rem;
+					@include media-breakpoint-down(md) {
+						padding: .5rem .8rem;
+					}
+				}
+				@include media-breakpoint-down(md) {
+					// padding: 1.2rem 1rem;
+					font-size: .9rem;
+					padding: .5rem .8rem;
+				}
+
+			}
+			&.active,
+			&:hover {
+				.nav-link {
+					background: $primary ;
+					color: #f1f1f1 !important;
+					// font-weight: 700;
+					padding: .8rem 1.8rem;
+					@include media-breakpoint-down(md) {
+						padding: .5rem .8rem;
+					}
+				}
+			}
+			&.highlight {
+				.bg-success {
+					background: #f8962d !important;
+					border: 0;
+					border-radius: 0;
+					color: $primary  !important;
+				}
+			}
+
+
+			@include media-breakpoint-down(lg) {
+			    width: auto;
+			}
+			@include media-breakpoint-down(md) {
+			    width: 90px;
+			}
+			@include media-breakpoint-down(sm) {
+				border-bottom: 1px solid #ecd76d;
+			    width: 100%;
+			}
+		}
+		@include media-breakpoint-down(sm) {
+			padding-bottom: 1rem;
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+	    background-size: 110px 100%;
+	}
+
+	@include media-breakpoint-down(md) {
+	    background-size: 80px 100%;
+	}
+	@include media-breakpoint-down(sm) {
+	    background-size: cover;
+	}
+}

@@ -1,0 +1,85 @@
+$levels: '.levels';
+$refer : '.refer';
+$steps: '.steps';
+
+#{$levels}{
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	@include media-breakpoint-down(md) {
+		padding-top: 0;
+	}
+}
+
+#{$refer} {
+	padding-top: 5rem;
+	padding-bottom: 3rem;
+	.refer__item__text {
+		margin-bottom: 0;
+	}
+	.refer-list {
+		list-style: none;
+		padding-left: 0;
+		li {
+			padding-left: 3rem;
+			min-height: 80px;
+			background: {
+	            size: 25px auto;
+	            image: url('../img/beneficios/refer-icon.svg');
+	            position: left center;
+	            repeat: no-repeat;
+	        }
+		}
+	}
+	&__item__pic:after {
+		border: 20px solid #b4d8f5;
+	}
+	.display-5 {
+		@include media-breakpoint-down(md) {
+			margin-bottom: 0 !important;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		padding-top: 3rem;
+	}
+}
+
+#{$steps}{
+	padding-top: 4rem;
+	.circle {
+		width: 5rem;
+		height: 5rem;
+		// background: #f89085;
+background: rgb(203,107,40);
+background: radial-gradient(circle, rgba(203,107,40,1) 0%, rgba(221,150,40,1) 37%, rgba(248,222,2,1) 100%);
+		margin: 1rem auto 0;
+		position: relative;
+		top: -2.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		font-size: 1.4rem;
+		font-weight: 700;
+	}
+	&__item {
+		height: 80%;
+	}
+	&__content {
+		.title {
+			font-weight: 600;
+			color: $primary;
+		}
+
+	}
+	.display-5 {
+		@include media-breakpoint-down(md) {
+			font-size: 1.4rem;
+			font-weight: 600 !important;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		padding-top: 2rem;
+	}
+}
+

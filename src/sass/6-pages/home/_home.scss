@@ -1,0 +1,90 @@
+.bg-banner {
+	background: {
+		size: cover;
+		image: url('../img/home/bannerh1.jpg');
+		position: center;
+		repeat: no-repeat;
+	}
+}
+$services: '.services';
+
+#{$services}{
+	&__title {
+		font-size: 2.6rem;
+		color: $primary;
+		text-transform: uppercase;
+		margin: 3rem 0 0;
+		font-weight: 600;
+		@include media-breakpoint-down(md) {
+			margin-top: .5rem;
+			font-size: 2rem;
+
+		}
+	}
+}
+
+
+
+.jumbotronbn {
+	padding: 0;
+}
+
+// Jumbotron
+.jumbotron {
+    background-size:cover;
+    padding: 7rem 1rem;
+    .bg-imgpixel {
+    	p {
+    		line-height: 1.2;
+    	}
+    	h1 {
+			font-size: 4rem;
+			line-height: 1;
+			letter-spacing: -2px;
+			// font-weight: 600 !important;
+			span {
+				font-size: 70%;
+			}
+			@include media-breakpoint-down(lg) {
+				font-size: 2.7rem;
+			}
+    	}
+    	h5 {
+			font-size: 2.6rem;
+			line-height: 1;
+			letter-spacing: -2px;
+			@include media-breakpoint-down(lg) {
+				font-size: 1.8rem;
+			}
+    	}
+    }
+    &--home {
+		.bg-imgpixel {
+			background: {
+				color: #ffffff;
+				image: url('../img/home/bannespl1.png');
+				size: cover;
+				position: bottom right;
+				repeat: no-repeat;
+			}
+		}
+    }
+    &--advs {
+    	.bg-imgpixel {
+    		background: {
+				color: #ffffff;
+				image: url('../img/beneficios/bannerben1.png');
+				size: cover;
+				position: bottom right;
+			}
+    	}
+    	.bg-banner {
+			background: {
+				size: cover;
+				image: url('../img/beneficios/bannerben2.jpg');
+				position: center;
+				repeat: no-repeat;
+			}
+    	}
+    }
+}
