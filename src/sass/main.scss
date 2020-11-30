@@ -29,7 +29,11 @@
 // General
 body {
     // overflow-x: hidden;
+    // background-color: $green-100;
     padding-top: 49.5px;
+    section {
+        background-color: #0b0b0b;
+    }
     @include media-breakpoint-down(md) {
         padding-top: 40px;
     }
@@ -46,6 +50,9 @@ body {
 }
 img {
     max-width:100%;
+}
+.margb-10 {
+    margin-bottom: 0.625rem;
 }
 .tofront {
     position:relative;
@@ -78,6 +85,23 @@ a.text-dark:hover {
     }
     @include media-breakpoint-down(sm) {
         font-size: 2rem;
+    }
+}
+
+.btn-primary {
+    background-color: $green-100;
+    &:hover {
+        background-color: #0e5d02;
+        // border-color: #00204b;
+    }
+}
+
+.btn-secondary {
+    background-color: $orange-200;
+    border-color: #bd7902;
+    &:hover {
+        background-color: #bd7902;
+        border-color: #bd7908;
     }
 }
 
@@ -167,9 +191,8 @@ a.text-dark:hover {
 .btn-white {background-color:#fff;}
 .btn-orange {
     // background-color: $orange;
-    background: rgb(204,110,40);
-    background: linear-gradient(90deg, rgba(204,110,40,1) 0%, rgba(224,162,38,1) 21%, rgba(250,223,0,1) 100%, rgba(224,162,38,1) 100%, rgba(204,110,40,1) 100%);
-    color: $primary;
+background: rgb(122,51,34);
+background: linear-gradient(34deg, rgba(122,51,34,1) 0%, rgba(122,51,34,1) 26%, rgba(211,136,4,1) 74%, rgba(211,136,4,1) 100%);
 }
 .btn-red {background-color: #ff9085;}
 // Inputs
@@ -290,8 +313,17 @@ a.text-dark:hover {
 .bg-lightGray { background-color: #f8f8f8; }
 .bg-lightdarkGray { background-color: #dbddde; }
 .bf-lightBlue2 { background-color: #E1F1FE;}
+.bg-green100 { background-color: $green-100; }
+.bg-green200 { background-color: #0d4e02; }
 
+.bg-greendeg {
+    background: rgb(15,110,0);
+    background: linear-gradient(34deg, rgba(15,110,0,1) 0%, rgba(15,110,0,1) 26%, rgba(79,167,108,1) 74%, rgba(79,167,108,1) 100%);
+}
+.bg-darkgreen { background-color: #10382f; }
 .bg-pinklight { background-color: #f9f0ed; }
+.bg-orange200 { background-color: #f26f1e; }
+.bg-red200 { background-color: #e31e15; }
 .text-navyble {
     color: #04274c !important;
 }

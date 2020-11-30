@@ -8,7 +8,7 @@
 // Color system
 //
 
-$white:    #fff !default;
+$white:    #f1f1f1 !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -18,7 +18,11 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
+$green-100: #0f6e00 !default;
 $black:    #000 !default;
+$black-100: #0b0b0b !default;
+$orange-100: #d38802 !default;
+$orange-200: #d38804 !default;
 $navtabactive: #fdf8d4 !default;
 
 $grays: () !default;
@@ -39,7 +43,7 @@ $grays: map-merge(
 );
 
 
-$blue:    #007bff !default;
+$blue:    #00367e !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -71,8 +75,8 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       $green-100 !default;
+$secondary:     $orange-200 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;

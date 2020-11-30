@@ -13,17 +13,23 @@ $heading-color : $primary;
 }
 
 .refer__item__text {
-    padding-right: 30px;
+    padding: 3rem 4rem;
     margin-bottom: 100px;
 
     &.refer__item__text--right {
-        padding-left: 30px;
-        padding-right: 0;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        @include media-breakpoint-down(md) {
+            padding: 2rem;
+        }
     }
 
     h2 {
-        font-size: 42px;
-        color: $primary;
+        font-size: 2.6rem;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -2px;
+        color: $white;
         text-transform: uppercase;
         margin-bottom: 24px;
         @include media-breakpoint-down(md) {
@@ -100,7 +106,7 @@ $heading-color : $primary;
         margin-bottom: 65px;
 
         p {
-            color: $heading-color;
+            color: $white;
             margin-bottom: 20px;
 
             &:last-child {
@@ -112,16 +118,41 @@ $heading-color : $primary;
             margin-bottom: 2rem;
         }
     }
+
+    @include media-breakpoint-down(md) {
+        padding: 2rem;
+    }
+}
+
+.img-hsm {
+    @include media-breakpoint-down(sm) {
+        height: 18.75rem !important;
+    }
 }
 
 .refer__item__pic {
     position: relative;
     z-index: 1;
-    padding-right: 50px;
-    margin-bottom: 110px;
-    padding-left: 30px;
+    // padding-right: 50px;
+    // margin-bottom: 110px;
+    // padding-left: 30px;
+    height: 100%;
+    background: {
+        // image: url('../img/home/mc-homepoints2.jpg');
+        size: cover;
+        position: center;
+        repeat: no-repeat;
+        // attachment: fixed;
+    }
 
     &.refer__item__pic--left {
+        background: {
+            // image: url('../img/home/mc-referidos.jpg');
+            size: cover;
+            position: center;
+            repeat: no-repeat;
+            // attachment: fixed;
+        }
         padding-left: 50px;
         padding-right: 0;
 
@@ -134,21 +165,21 @@ $heading-color : $primary;
         margin-bottom: 0;
     }
 
-    &:after {
-        position: absolute;
-        left: 50px;
-        top: -50px;
-        width: calc(100% - 50px);
-        height: 100%;
-        border: 20px solid rgba(251, 181, 0, 0.4);
-        content: "";
-        z-index: -1;
-    }
+    // &:after {
+    //     position: absolute;
+    //     left: 50px;
+    //     top: -50px;
+    //     width: calc(100% - 50px);
+    //     height: 100%;
+    //     border: 20px solid rgba(251, 181, 0, 0.4);
+    //     content: "";
+    //     z-index: -1;
+    // }
 
     img {
         min-width: 100%;
     }
     @include media-breakpoint-down(md) {
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
     }
 }
