@@ -92,7 +92,7 @@ a.text-dark:hover {
     background-color: $green-100;
     &:hover {
         background-color: #0e5d02;
-        // border-color: #00204b;
+        color: $white !important;
     }
 }
 
@@ -193,6 +193,9 @@ a.text-dark:hover {
     // background-color: $orange;
 background: rgb(122,51,34);
 background: linear-gradient(34deg, rgba(122,51,34,1) 0%, rgba(122,51,34,1) 26%, rgba(211,136,4,1) 74%, rgba(211,136,4,1) 100%);
+    &:hover {
+        color: $white !important;
+    }
 }
 .btn-red {background-color: #ff9085;}
 // Inputs

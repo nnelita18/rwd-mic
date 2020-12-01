@@ -34,6 +34,14 @@
         background-size: 500px auto;
     }
   }
+  &--clients {
+    background: {
+      color: #ffffff;
+      image: url('../img/clientes/mc-sideclients.jpg');
+      size: cover;
+      position: top right;
+    }
+  }
   &--loginsb {
     background: {
       color: #ffffff;
@@ -289,5 +297,9 @@
 
 .black-tabContent {
   color: $white;
+  a {
+    color: $white;
+    font-weight: 600;
+  }
 }
 

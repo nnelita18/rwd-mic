@@ -60,42 +60,42 @@
         <section id="container-profile" class="contact profile">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-3 col-xl-3 pt-3 bg-lightGray px-1 bg-reg--login">
+                    <div class="col-lg-3 col-xl-2 pt-3 bg-lightGray px-1 bg-reg--clients">
                         <nav>
                             <div class="nav nav-tabs" id="nav-tabperfil" role="tablist"> <a class="nav-link active " id="nav-home-tab" data-toggle="tab" href="#nav-home"
-                                role="tab" aria-controls="nav-home" aria-selected="true">Mi Perfil</a>
-
-                                <a
-                                class="nav-link " id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
-                                role="tab" aria-controls="nav-profile" aria-selected="false">Estado de cuenta</a> <a class="nav-link " id="nav-contact-tab" data-toggle="tab"
-                                    href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Mis beneficios</a>
-
-                                    <a
-                                    class="nav-link " id="nav-refs-tab" data-toggle="tab" href="#nav-refs"
-                                    role="tab" aria-controls="nav-refs" aria-selected="false">Referidos</a> <a class="nav-link " id="nav-pass-tab" data-toggle="tab"
-                                        href="#nav-pass" role="tab" aria-controls="nav-pass" aria-selected="false">Cambiar Contraseña</a>
+                                role="tab" aria-controls="nav-home" aria-selected="true">
+                                <span>Mi Perfil</span>
+                            </a>
+ <a class="nav-link " id="nav-profile-tab"
+                                data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">Estado de cuenta</a>
+ <a class="nav-link " id="nav-contact-tab"
+                                data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">Mis beneficios</a>
+ <a class="nav-link " id="nav-refs-tab"
+                                data-toggle="tab" href="#nav-refs" role="tab" aria-controls="nav-refs"
+                                aria-selected="false">Referidos</a>
+ <a class="nav-link " id="nav-pass-tab"
+                                data-toggle="tab" href="#nav-pass" role="tab" aria-controls="nav-pass"
+                                aria-selected="false">Cambiar Contraseña</a>
 
                             </div>
                         </nav>
                     </div>
-                    <div class="col-lg-9 col-xl-9 bg-pinklight">
+                    <div class="col-lg-9 col-xl-10 bg-darkgreen px-3">
                         <div class="tab-content" id="nav-tabperfilContent">
                             <div class="tab-pane fade profile__tab show active" id="nav-home" role="tabpanel"
                             aria-labelledby="nav-home-tab">
-                                <div class="card  bg-pinklight">
-                                    <div class="card-body">
+                                <div class="card">
+                                    <div class="card-body bg-darkgreen bgp-client--profile">
                                         <div class="row">
-                                            <div class="col-lg-6 col-xl-6 p-0">
-                                                 <h1 class="title text-primary mb-4">Bienvenido</h1>
+                                            <div class="col-lg-6 col-xl-6">
+                                                 <h2 class="title text-white text-center mb-4">Bienvenido</h2>
  <small class="text-center d-block">Haz click en la tarjeta para usar tu codigó</small>
 
                                                 <div
                                                 id="cardbox" class="card-container">
                                                     <div id="cardfront" class="card-client  card-front position-relative">
-                                                        <!-- <div class="card-client__title">
-                                                        MicroTec Rewards
-                                                        <span>Card</span>
-                                                    </div> -->
                                                         <img src="assets/img/clientes/reward-card.jpg" class="img-fluid imgcard">
                                                         <div class="card-info position-absolute">
                                                              <h4 class="card-title">Carlos Ortega Sánchez</h4>
@@ -110,11 +110,11 @@
                                             </div>
                                             <div class="w-100 py-4 details">
                                                 <div class="d-flex justify-content-between align-items-center pb-4">
-                                                     <h5>Puntos Actuales: <span class=" text-primary font-weight-bold">600</span></h5>
- <a href="#" id="go-benefs" class="btn btn-primary btn-small float-right">Mis Beneficios</a>
+                                                     <h5>Puntos Actuales: <span class=" text-white font-weight-bold">600</span></h5>
+ <a href="#" id="go-benefs" class="btn btn-orange btn-small float-right">Mis Beneficios</a>
 
                                                 </div>
-                                                <div class="d-flex justify-content-between text-muted mt-3 mb-5"> <span class="text-primary">Nivel: A</span>  <span class="text-primary">Te faltan sólo 2000 puntos para Nivel B</span>
+                                                <div class="d-flex justify-content-between text-muted mt-3 mb-5"> <span class="text-white">Nivel: A</span>  <span class="text-white">Te faltan sólo <strong>2000</strong> puntos para Nivel B</span>
 
                                                 </div>
                                                 <div class="progress progress-slim mt-2 progress-md ">
@@ -244,7 +244,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="form-group row showcase_row_area text-right">
-                                                            <button class="btn btn-primary w-50 btn-block mx-auto">Guardar</button>
+                                                            <button class="btn btn-secondary w-50 btn-block mx-auto">Guardar</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -254,134 +254,140 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade bg-imgwoman" id="nav-profile" role="tabpanel"
-                        aria-labelledby="nav-profile-tab">
-                            <div class="row pt-3 justify-content-start">
-                                <div class="col-lg-12">
-                                     <h4 class="mb-3 text-primary subtitle">Mi Estado de cuenta</h4>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="car-body bgp-client--profile">
+                                        <div class="row pt-3 justify-content-start mx-0">
+                                            <div class="col-lg-12">
+                                                 <h4 class="mb-3 text-white subtitle">Mi Estado de cuenta</h4>
 
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="card">
-                                        <div class="card-header">Tu saldo en Puntos de los últimos 3 meses</div>
-                                        <div class="card-body ">
-                                            <div class="profile__last">
-                                                <div class="w-100 py-1">
-                                                    <div class="d-flex justify-content-between text-muted"> <span class="text-primary">Agosto</span>  <span class="text-primary">100 puntos - 8 visitas</span>
+                                            </div>
+                                            <div class="col-lg-7">
+                                                <div class="card">
+                                                    <div class="card-header">Tu saldo en Puntos de los últimos 3 meses</div>
+                                                    <div class="card-body ">
+                                                        <div class="profile__last">
+                                                            <div class="w-100 py-1">
+                                                                <div class="d-flex justify-content-between text-muted"> <span class="text-primary">Agosto</span>  <span class="text-primary">100 puntos - 8 visitas</span>
 
-                                                    </div>
-                                                    <div class="progress progress-slim mt-2">
-                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 10%"
-                                                        aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"> <span>10%</span>
+                                                                </div>
+                                                                <div class="progress progress-slim mt-2">
+                                                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 10%"
+                                                                    aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"> <span>10%</span>
 
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-100 py-1">
+                                                                <div class="d-flex justify-content-between text-muted"> <span class="text-primary">Septiembre</span>  <span class="text-primary">350 puntos - 17 visitas</span>
+
+                                                                </div>
+                                                                <div class="progress progress-slim mt-2">
+                                                                    <div class="progress-bar bg-info" role="progressbar" style="width:35%"
+                                                                    aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"> <span>35%</span>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-100 py-1">
+                                                                <div class="d-flex justify-content-between text-muted"> <span class="text-primary">Octubre</span>  <span class="text-primary">40 puntos - 6 visitas</span>
+
+                                                                </div>
+                                                                <div class="progress progress-slim mt-2">
+                                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 65%"
+                                                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"> <span>65%</span>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-right pt-4">
+                                                                <label for="" class="float-left">Total</label>
+                                                                <p class="float-right">490 Puntos
+                                                                    <br>31 visitas</p>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="w-100 py-1">
-                                                    <div class="d-flex justify-content-between text-muted"> <span class="text-primary">Septiembre</span>  <span class="text-primary">350 puntos - 17 visitas</span>
-
-                                                    </div>
-                                                    <div class="progress progress-slim mt-2">
-                                                        <div class="progress-bar bg-info" role="progressbar" style="width:35%"
-                                                        aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"> <span>35%</span>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="w-100 py-1">
-                                                    <div class="d-flex justify-content-between text-muted"> <span class="text-primary">Octubre</span>  <span class="text-primary">40 puntos - 6 visitas</span>
-
-                                                    </div>
-                                                    <div class="progress progress-slim mt-2">
-                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 65%"
-                                                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"> <span>65%</span>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-right pt-4">
-                                                    <label for="" class="float-left">Total</label>
-                                                    <p class="float-right">490 Puntos
-                                                        <br>31 visitas</p>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row pt-5 pb-4 justify-content-start">
-                                <div class="col-lg-10">
-                                    <div class="card">
-                                        <div class="card-header">
-                                             <h5>Detalle de Movimientos <span class="text-light small">[ultimos 6 meses]</span> </h5>
+                                        <div class="row pt-5 pb-4 justify-content-start mx-0">
+                                            <div class="col-lg-10">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                         <h5>Detalle de Movimientos <span class="text-light small">[ultimos 6 meses]</span> </h5>
 
-                                        </div>
-                                        <div class="card-body">
-                                             <h5>Mayo 2020 - Noviembre 2020</h5>
+                                                    </div>
+                                                    <div class="card-body">
+                                                         <h5>Mayo 2020 - Noviembre 2020</h5>
 
-                                            <div class="table-responsive">
-                                                <table class="table info-table table-striped account-table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th># visita</th>
-                                                            <th>Fecha</th>
-                                                            <th>Sucursal</th>
-                                                            <th>Concepto</th>
-                                                            <th>Monto</th>
-                                                            <th>Puntos</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>2345</td>
-                                                            <td>2020-11-20</td>
-                                                            <td>General</td>
-                                                            <td>PUNTOS DE BIENVENIDA</td>
-                                                            <td>$0</td>
-                                                            <td>100</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2345</td>
-                                                            <td>2020-11-21</td>
-                                                            <td>Plaz Sn Diego</td>
-                                                            <td>Recarga TAE</td>
-                                                            <td>$100</td>
-                                                            <td>10</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2345</td>
-                                                            <td>2020-11-21</td>
-                                                            <td>Plaz Sn Diego</td>
-                                                            <td>Recarga TAE</td>
-                                                            <td>$100</td>
-                                                            <td>10</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                                        <div class="table-responsive">
+                                                            <table class="table info-table table-striped account-table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th># visita</th>
+                                                                        <th>Fecha</th>
+                                                                        <th>Sucursal</th>
+                                                                        <th>Concepto</th>
+                                                                        <th>Monto</th>
+                                                                        <th>Puntos</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>2345</td>
+                                                                        <td>2020-11-20</td>
+                                                                        <td>General</td>
+                                                                        <td>PUNTOS DE BIENVENIDA</td>
+                                                                        <td>$0</td>
+                                                                        <td>100</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2345</td>
+                                                                        <td>2020-11-21</td>
+                                                                        <td>Plaz Sn Diego</td>
+                                                                        <td>Recarga TAE</td>
+                                                                        <td>$100</td>
+                                                                        <td>10</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2345</td>
+                                                                        <td>2020-11-21</td>
+                                                                        <td>Plaz Sn Diego</td>
+                                                                        <td>Recarga TAE</td>
+                                                                        <td>$100</td>
+                                                                        <td>10</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                            <section id="" class="no-padding">
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel bg-darkgreen"
+                        aria-labelledby="nav-contact-tab">
+                            <section id="" class="no-padding bg-darkgreen">
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-lg-12 pt-3">
-                                             <h4 class="mb-3 text-primary subtitle">Beneficios MicroTec Rewards</h4>
+                                             <h4 class="mb-3 text-white subtitle">Beneficios MicroTec Rewards</h4>
 
                                             <p>Recuerda que los TecnoPuntos podrán canjearse en <strong>cualquier sucursal MicroTec </strong>por
                                                 productos o servicios contando como dinero en efectivo.</p>
                                             <div>
-                                                <img src="assets/img/clientes/referidos.jpg" alt="Programa de Referidos"
+                                                <img src="assets/img/clientes/mc-refered.jpg" alt="Programa de Referidos"
                                                 class="img-fluid rounded mx-auto d-block">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-12 text-center">
-                                             <h2 class="section-heading text-primary">Beneficios Actuales - Nivel A</h2>
+                                             <h2 class="section-heading text-white">Beneficios Actuales - Nivel A</h2>
 
                                             <hr class="primary">
                                             <br/>
@@ -395,8 +401,6 @@
 
                                                  <h1>100 TecnoPuntos de bienvenida</h1>
 
-                                                <p>Lorem ipsum dolor sit adipiscing elit. Praesent tempus eleifend risus
-                                                    ut congue eset nec lacus.</p>
                                             </div>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -404,8 +408,6 @@
 
                                                  <h1>10% del valor de tus visitas en TecnoPuntos</h1>
 
-                                                <p>Lorem ipsum dolor sit adipiscing elit. Praesent tempus eleifend risus
-                                                    ut congue eset nec lacus.</p>
                                             </div>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -414,8 +416,6 @@
 
                                                  <h1>Promociones y eventos exclusivos</h1>
 
-                                                <p>Lorem ipsum dolor sit adipiscing elit. Praesent tempus eleifend risus
-                                                    ut congue eset nec lacus.</p>
                                             </div>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -423,18 +423,16 @@
 
                                                  <h1>Descuentos en contrataciones de planes de renta</h1>
 
-                                                <p>Lorem ipsum dolor sit adipiscing elit. Praesent tempus eleifend risus
-                                                    ut congue eset nec lacus.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </section>
-                            <section id="" class="no-padding">
+                            <section id="" class="no-padding bg-darkgreen">
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-lg-12 text-center">
-                                             <h2 class="section-heading text-primary">
+                                             <h2 class="section-heading text-white">
                                             Sigue avanzando para lograr el siguiente nivel - Nivel B</h2>
 
                                             <hr class="primary">
@@ -449,8 +447,6 @@
 
                                                  <h1>20% del valor de tus visitas en TecnoPuntos</h1>
 
-                                                <p>Lorem ipsum dolor sit adipiscing elit. Praesent tempus eleifend risus
-                                                    ut congue eset nec lacus.</p>
                                             </div>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -458,8 +454,6 @@
 
                                                  <h1>Un regalo de bienvenida</h1>
 
-                                                <p>Lorem ipsum dolor sit adipiscing elit. Praesent tempus eleifend risus
-                                                    ut congue eset nec lacus.</p>
                                             </div>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -467,8 +461,6 @@
 
                                                  <h1>Promociones y eventos exclusivos</h1>
 
-                                                <p>Lorem ipsum dolor sit adipiscing elit. Praesent tempus eleifend risus
-                                                    ut congue eset nec lacus.</p>
                                             </div>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -476,8 +468,6 @@
 
                                                  <h1>Acceso a ventas especiales</h1>
 
-                                                <p>Lorem ipsum dolor sit adipiscing elit. Praesent tempus eleifend risus
-                                                    ut congue eset nec lacus.</p>
                                             </div>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -485,8 +475,6 @@
 
                                                  <h1>Mayores descuentos en tus visitas de equipos celulares y accesorios</h1>
 
-                                                <p>Lorem ipsum dolor sit adipiscing elit. Praesent tempus eleifend risus
-                                                    ut congue eset nec lacus.</p>
                                             </div>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -494,14 +482,12 @@
 
                                                  <h1>Descuentos en contratación de planes de renta</h1>
 
-                                                <p>Lorem ipsum dolor sit adipiscing elit. Praesent tempus eleifend risus
-                                                    ut congue eset nec lacus.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row pb-3">
                                         <div class="col-lg-12 text-center">
-                                             <h2 class="section-heading text-primary">Promociones y descuentos disponibles </h2>
+                                             <h2 class="section-heading text-white">Promociones y descuentos disponibles </h2>
 
                                             <hr class="primary">
                                             <br/>
@@ -524,13 +510,13 @@
                         </div>
                         <div class="tab-pane fade" id="nav-refs" role="tabpanel" aria-labelledby="nav-refs-tab">
                             <div class="card">
-                                <div class="card-body refers bg-pinklight ">
+                                <div class="card-body refers bg-darkgreen">
                                     <div class="row">
                                         <div class="col-lg-7 refers__descrip">
-                                             <h4 class="text-primary mb-3">Refiere y sigue ganando con MicroTec reward</h4>
+                                             <h4 class="text-white mb-3">Refiere y sigue ganando con MicroTec reward</h4>
 
                                             <div class=" d-block mx-auto p-1 shadow position-relative d-flex align-items-center justify-content-center">
-                                                <img src="assets/img/clientes/referidos.jpg" alt="Programa de Referidos"
+                                                <img src="assets/img/clientes/mc-refered.jpg" alt="Programa de Referidos"
                                                 class="img-fluid rounded mx-auto d-block">
                                                 <button id="" class="btn btn-orange position-absolute" data-toggle="modal"
                                                 data-target="#referedmodal">Referir</button>
@@ -581,12 +567,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade bg-imgwoman" id="nav-pass" role="tabpanel" aria-labelledby="nav-pass-tab">
+                        <div class="tab-pane fade" id="nav-pass" role="tabpanel" aria-labelledby="nav-pass-tab">
                             <div class="row py-5 justify-content-center">
                                 <div class="col-lg-5 pt-3 pb-5">
                                     <div class="contact__form px-5 border-gray200">
                                         <div class="section-title">
-                                             <h5 class="text-primary">Cambio de Contraseña</h5>
+                                             <h5 class="text-white">Cambio de Contraseña</h5>
 
                                         </div>
                                         <form action="./perfil.html" class="register-form">
@@ -596,7 +582,7 @@
                                                 <input type="password" class="register-form__input" placeholder="Confirmar Contraseña"
                                                 required>
                                             </div>
-                                            <button type="submit" class="btn btn-primary btn-block">Cambiar mi contraseña</button>
+                                            <button type="submit" class="btn btn-secondary btn-block">Cambiar mi contraseña</button>
                                         </form>
                                     </div>
                                 </div>
@@ -623,7 +609,7 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-lg-12">
-                                <p class="text-primary">Recuerda que al referir siempre ganas!</p>
+                                <p class="text-white">Recuerda que al referir siempre ganas!</p>
                                 <div class="form-inline">
                                     <input type="text" class="form-control mb-2 mr-sm-2 code-number" id="inputcode"
                                     value="https://micro-tec.com.mx/pagina/microtec-rewards_pagina/registrar.html/RW2345">

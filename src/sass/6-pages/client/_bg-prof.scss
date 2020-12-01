@@ -1,0 +1,11 @@
+.bgp-client {
+	&--profile {
+		background: {
+		    color: #ffffff;
+		    image: url('../img/clientes/mc-tablebg.jpg');
+		    size: cover;
+		    position: center bottom;
+		    repeat-x: no-repeat;
+		}
+	}
+}
